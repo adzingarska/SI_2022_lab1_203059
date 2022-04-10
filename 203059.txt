@@ -1,0 +1,232 @@
+4.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs
+$ git clone https://github.com/adzingarska/SI_2022_1ab1_203059.git 
+Cloning into 'S1_2022_lab1_203059'...
+remote: Enumerating objects: 6, done. 
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+Со оваа команда го клонирам репозиториумот локално, но и ги поврзувам.
+
+
+5.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git add shopping_list.txt
+Со оваа команда додавам нова текстуална датотека во локалниот репозиториум
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+5.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git commit -m "Add 5 items to the shopping list"
+[master 5c9c418] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+Со git commit -m се комитира и се додава порака.
+
+6.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git add shopping_list.txt
+
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git commit -m "Add quantities to the items."
+[master 49efe7c] Add quantities to the items.
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+Внесувам количини на ставките и правам комит со соодветна порака
+
+7.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+Креирам нова гранка branch1
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+Креирам нова гранка branch2
+
+9.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 700 bytes | 700.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/adzingarska/SI_2022_lab1_203059.git
+   b67fe08..49efe7c  master -> master
+
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git push origin branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/adzingarska/SI_2022_lab1_203059/pull/new/branch1
+remote:
+To https://github.com/adzingarska/SI_2022_lab1_203059.git
+ * [new branch]      branch1 -> branch1
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git push origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/adzingarska/SI_2022_lab1_203059/pull/new/branch2
+remote:
+To https://github.com/adzingarska/SI_2022_lab1_203059.git
+ * [new branch]      branch2 -> branch2
+
+
+10.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+11.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch1)
+$ git add shoping_list.txt
+fatal: pathspec 'shoping_list.txt' did not match any files
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch1)
+$ git add shopping_list.txt
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch1)
+$ git commit -m "Change quantity of item #5"
+[branch1 9c74182] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+13.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git add shopping_list.txt
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git commit -m "Change quantity of item #2"
+[master c912095] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 371.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/adzingarska/SI_2022_lab1_203059.git
+   49efe7c..c912095  master -> master
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git push origin branch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/adzingarska/SI_2022_lab1_203059.git
+   49efe7c..9c74182  branch1 -> branch1
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git push origin branch2
+Everything up-to-date
+
+15.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+16.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch2)
+$ git add shopping_list.txt
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch2)
+$ git commit -m "Modify item #4"
+[branch2 85ab9c9] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+18.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch2)
+$ git add shopping_list.txt
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch2)
+$ git commit -m "Modify item #4 and add item #6"
+[branch2 4bc1e01] Modify item #4 and add item #6
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+20.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+21.
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+-Се јави конфликт. Го решив рачно со прифаќање од branch2
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master|MERGING)
+$ git add shopping_list.txt
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master|MERGING)
+$ git commit -m "Resolving conflicts"
+[master e90bc64] Resolving conflicts
+
+Angela@DESKTOP-3E7DJ0Q MINGW64 /e/FINKI/2 ГОДИНА/softverso/labs/SI_2022_lab1_203059 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+
+
