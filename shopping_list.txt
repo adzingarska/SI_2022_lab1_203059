@@ -1,5 +1,5 @@
-1. Mleko
-2. Brasno
-3. Cokolada
-4. Banana
-5. Jajca
+1. Mleko x 1
+2. Brasno x 2
+3. Cokolada x 3
+4. Banana x 5
+5. Jajca x 7
